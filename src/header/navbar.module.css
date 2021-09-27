@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logos {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.logo {
+  width: 25px;
+}
+.logo-name {
+  margin-left: 20px;
+  font-size: xx-large;
+  cursor: pointer;
+}
+.lists {
+  list-style: none;
+  display: flex;
+}
+.list {
+  margin-left: 60px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.list:hover {
+  color: #fdae54;
+}
+.disp {
+  display: none;
+}
+@media all and (max-width: 1100px) {
+  .list {
+    display: none;
+  }
+  .disp {
+    cursor: pointer;
+    display: block;
+    font-size: 40px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .logo {
+    width: 22px;
+  }
+  .logo-name {
+    font-size: 27px;
+  }
+  .disp {
+    font-size: 35px;
+  }
+}

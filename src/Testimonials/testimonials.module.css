@@ -1,0 +1,81 @@
+.div {
+  position: relative;
+}
+.rect {
+  position: absolute;
+  top: 20%;
+}
+.name {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+.head {
+  font-size: 25px;
+}
+.head3 {
+  margin-top: 5px;
+  font-weight: lighter;
+  padding: 7px;
+}
+.main {
+  padding: 70px 100px;
+  display: flex;
+}
+.right {
+  margin: auto 0;
+  margin-left: 60px;
+}
+
+@media all and (max-width: 1250px) {
+  .main {
+    padding-right: 50px;
+  }
+}
+@media all and (max-width: 1070px) {
+  .main {
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 1000px) {
+  .rect {
+    display: none;
+  }
+  .main {
+    padding: 20px;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .head {
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 750px) {
+  .head {
+    font-size: 18px;
+  }
+  .left {
+    width: 100%;
+  }
+}
+@media all and (max-width: 500px) {
+  .main {
+    flex-direction: column;
+  }
+  .left {
+    padding: 40px;
+    padding-top: 0;
+  }
+  .right {
+    margin: auto;
+  }
+  .para {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 400px) {
+  .head {
+    font-size: 16px;
+  }
+}
